@@ -1,8 +1,10 @@
-
+import Employe from "./components/Employe";
+import Task from "./components/Task";
 function App() {
   return (
     <div className="App">
-      <h1 className="text-red-500">this is a test to see if tailwindcss works</h1>
+      <Employe/>
+      <Task/>
     </div>
   );
 }
