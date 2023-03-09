@@ -1,0 +1,91 @@
+{
+    "employees":[
+        {
+            "fullName":"Vladan Mladenov",
+            "email":"vladan.mladenov@gmail.com",
+            "birthday":"06.12.1997.",
+            "salary":"600 EUR",
+            "id":"0"
+
+        },
+        {
+            "fullName":"Petar Petrovic",
+            "email":"petar@gmail.com",
+            "birthday":"01.1.1997.",
+            "salary":"500 EUR",
+            "id":"1"
+        },
+        {
+            "fullName":"Marija Ilic",
+            "email":"marija@gmail.com",
+            "birthday":"3.2.1995",
+            "salary":"800 EUR",
+            "id":"2"
+        },
+        {
+            "fullName":"Veljko Simic",
+            "email":"veljko@gmail.com",
+            "birthday":"5.6.1998.",
+            "salary":"400 EUR",
+            "id":"3"
+        },
+        {
+            "fullName":"Milena Stankobic",
+            "email":"milena@gmail.com",
+            "birthday":"9.12.1993.",
+            "salary":"5000 EUR",
+            "id":"4"
+        },
+        {
+            "fullName":"Stefan Trajkovic",
+            "email":"stefan@gmail.com",
+            "birthday":"29.1.1997.",
+            "salary":"600 EUR",
+            "id":"5"
+        }
+    ],
+    "tasks":[
+        {
+            "title":"CSS bug fix",
+            "description":"Fix CSS positioning",
+            "assigneeId":3,
+            "dueDate":"13/3/2023",
+            "compleated":true
+        },
+        {
+            "title":"JavaScript bug fix",
+            "description":"Fix JavaScript errors",
+            "assigneeId":1,
+            "dueDate":"13/3/2023",
+            "compleated":false
+        },
+        {
+            "title":"CSS style fix",
+            "description":"Fix CSS Styling",
+            "assigneeId":5,
+            "dueDate":"13/3/2023",
+            "compleated":true
+        },
+        {
+            "title":"JavaScript sortig bug fix",
+            "description":"Fix sorting bug",
+            "assigneeId":0,
+            "dueDate":"13/3/2023",
+            "compleated":true
+        },
+        {
+            "title":"Change design",
+            "description":"Fix app design",
+            "assigneeId":2,
+            "dueDate":"13/3/2023",
+            "compleated":false
+        },
+        {
+            "title":"CSS bug fix",
+            "description":"Fix text size",
+            "assigneeId":4,
+            "dueDate":"13/3/2023",
+            "compleated":true
+        }
+    ]
+}

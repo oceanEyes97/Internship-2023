@@ -1,10 +1,8 @@
-import Employe from "./components/Employe";
-import Task from "./components/Task";
+import TopFiveEmployees from "./components/TopFiveEmployes";
 function App() {
   return (
     <div className="App">
-      <Employe/>
-      <Task/>
+      <TopFiveEmployees/> 
     </div>
   );
 }
