@@ -1,11 +1,11 @@
 import { useState } from "react";
 import ProfileIcon from "../images/ProfileIcon.png"
-const Employee = () => {
+const Employee = ({name,email,birthday,salary}) => {
 
-    const [Name, setName] = useState("DummyPerson");
-    const [Email, setEmail] = useState("dummy@gmail.com");
-    const [Date, setDate] = useState("DD/MM/YY");
-    const [Salary, setSalary] = useState("500");
+    const [Name, setName] = useState(name);
+    const [Email, setEmail] = useState(email);
+    const [Date, setDate] = useState(birthday);
+    const [Salary, setSalary] = useState(salary);
 
     return ( 
     <div className=" w-52 h-auto border-2 rounded-xl p-2 m-2 border-black">
