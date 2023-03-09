@@ -2,7 +2,7 @@
     "employees":[
         {
             "fullName":"Vladan Mladenov",
-            "email":"vladan.mladenov@gmail.com",
+            "email":"vladan@gmail.com",
             "birthday":"06.12.1997.",
             "salary":"600 EUR",
             "id":"0"
@@ -30,7 +30,7 @@
             "id":"3"
         },
         {
-            "fullName":"Milena Stankobic",
+            "fullName":"Milena Stankovic",
             "email":"milena@gmail.com",
             "birthday":"9.12.1993.",
             "salary":"5000 EUR",
@@ -50,42 +50,48 @@
             "description":"Fix CSS positioning",
             "assigneeId":3,
             "dueDate":"13/3/2023",
-            "compleated":true
+            "compleated":true,
+            "taskId":0
         },
         {
             "title":"JavaScript bug fix",
             "description":"Fix JavaScript errors",
             "assigneeId":1,
             "dueDate":"13/3/2023",
-            "compleated":false
+            "compleated":false,
+            "taskId":1
         },
         {
             "title":"CSS style fix",
             "description":"Fix CSS Styling",
             "assigneeId":5,
             "dueDate":"13/3/2023",
-            "compleated":true
+            "compleated":true,
+            "taskId":2
         },
         {
             "title":"JavaScript sortig bug fix",
             "description":"Fix sorting bug",
             "assigneeId":0,
             "dueDate":"13/3/2023",
-            "compleated":true
+            "compleated":true,
+            "taskId":3
         },
         {
             "title":"Change design",
             "description":"Fix app design",
             "assigneeId":2,
             "dueDate":"13/3/2023",
-            "compleated":false
+            "compleated":false,
+            "taskId":4
         },
         {
             "title":"CSS bug fix",
             "description":"Fix text size",
             "assigneeId":4,
             "dueDate":"13/3/2023",
-            "compleated":true
+            "compleated":true,
+            "taskId":5
         }
     ]
 }
