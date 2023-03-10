@@ -2,6 +2,8 @@ import { createBrowserRouter, Route } from "react-router-dom";
 import App from "./App";
 import EmployeeList from "./components/EmployeeList";
 import TaskList from "./components/TaskList";
+import AddEmployee from "./components/AddEmployee";
+import AddTask from "./components/AddTask";
 
 const router=createBrowserRouter([
    {
@@ -9,8 +11,18 @@ const router=createBrowserRouter([
     element:<EmployeeList/>,
    },
    {
-    path:"/Tasks",
+    path:"/tasks",
     element:<TaskList/>,
+   },
+   {
+      path:"/addEmployee",
+      element:<AddEmployee/>
+
+   },
+   {
+      path:"/addTask",
+      element:<AddTask/>
+
    },
    {
     path:"/",

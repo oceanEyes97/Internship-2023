@@ -7,7 +7,9 @@ const NavigationBar = () => {
            
            <Link to={"/"} className="flex-1">Home</Link>
            <Link to={"/employees"} className="flex-1">Employee's</Link>
+           <Link to={"/addEmployee"} className="flex-1">Add Employee </Link>
            <Link to={"/tasks"} className="flex-1">Tasks</Link>
+           <Link to={"/addTask"} className="flex-1">Add Task</Link>
        </div>
        </div>
      );
