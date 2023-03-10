@@ -1,97 +1,109 @@
 {
-    "employees":[
-        {
-            "fullName":"Vladan Mladenov",
-            "email":"vladan@gmail.com",
-            "birthday":"06.12.1997.",
-            "salary":"600 EUR",
-            "id":"0"
-
-        },
-        {
-            "fullName":"Petar Petrovic",
-            "email":"petar@gmail.com",
-            "birthday":"01.1.1997.",
-            "salary":"500 EUR",
-            "id":"1"
-        },
-        {
-            "fullName":"Marija Ilic",
-            "email":"marija@gmail.com",
-            "birthday":"3.2.1995",
-            "salary":"800 EUR",
-            "id":"2"
-        },
-        {
-            "fullName":"Veljko Simic",
-            "email":"veljko@gmail.com",
-            "birthday":"5.6.1998.",
-            "salary":"400 EUR",
-            "id":"3"
-        },
-        {
-            "fullName":"Milena Stankovic",
-            "email":"milena@gmail.com",
-            "birthday":"9.12.1993.",
-            "salary":"5000 EUR",
-            "id":"4"
-        },
-        {
-            "fullName":"Stefan Trajkovic",
-            "email":"stefan@gmail.com",
-            "birthday":"29.1.1997.",
-            "salary":"600 EUR",
-            "id":"5"
-        }
-    ],
-    "tasks":[
-        {
-            "title":"CSS bug fix",
-            "description":"Fix CSS positioning",
-            "assigneeId":3,
-            "dueDate":"13/3/2023",
-            "compleated":true,
-            "taskId":0
-        },
-        {
-            "title":"JavaScript bug fix",
-            "description":"Fix JavaScript errors",
-            "assigneeId":1,
-            "dueDate":"13/3/2023",
-            "compleated":false,
-            "taskId":1
-        },
-        {
-            "title":"CSS style fix",
-            "description":"Fix CSS Styling",
-            "assigneeId":5,
-            "dueDate":"13/3/2023",
-            "compleated":true,
-            "taskId":2
-        },
-        {
-            "title":"JavaScript sortig bug fix",
-            "description":"Fix sorting bug",
-            "assigneeId":0,
-            "dueDate":"13/3/2023",
-            "compleated":true,
-            "taskId":3
-        },
-        {
-            "title":"Change design",
-            "description":"Fix app design",
-            "assigneeId":2,
-            "dueDate":"13/3/2023",
-            "compleated":false,
-            "taskId":4
-        },
-        {
-            "title":"CSS bug fix",
-            "description":"Fix text size",
-            "assigneeId":4,
-            "dueDate":"13/3/2023",
-            "compleated":true,
-            "taskId":5
-        }
-    ]
+  "employees": [
+    {
+      "fullName": "Vladan Mladenov",
+      "email": "vladan@gmail.com",
+      "birthday": "06.12.1997.",
+      "salary": "600 EUR",
+      "id": 0
+    },
+    {
+      "fullName": "Petar Petrovic",
+      "email": "petar@gmail.com",
+      "birthday": "01.1.1997.",
+      "salary": "500 EUR",
+      "id": 1
+    },
+    {
+      "fullName": "Marija Ilic",
+      "email": "marija@gmail.com",
+      "birthday": "3.2.1995",
+      "salary": "800 EUR",
+      "id": 2
+    },
+    {
+      "fullName": "Veljko Simic",
+      "email": "veljko@gmail.com",
+      "birthday": "5.6.1998.",
+      "salary": "400 EUR",
+      "id": 3
+    },
+    {
+      "fullName": "Milena Stankovic",
+      "email": "milena@gmail.com",
+      "birthday": "9.12.1993.",
+      "salary": "5000 EUR",
+      "id": 4
+    },
+    {
+      "fullName": "Stefan Trajkovic",
+      "email": "stefan@gmail.com",
+      "birthday": "29.1.1997.",
+      "salary": "600 EUR",
+      "id": 5
+    },
+    {
+      "fullName": "Marko Markovic",
+      "email": "markom@gmail.com",
+      "birthday": "1/1/1990",
+      "salary": "400 EUR",
+      "id": 6
+    }
+  ],
+  "tasks": [
+    {
+      "title": "CSS bug fix",
+      "description": "Fix CSS positioning",
+      "assignee": "Veljko Simic",
+      "assigneeId": 3,
+      "dueDate": "13/3/2023",
+      "compleated": true,
+      "taskId": 0
+    },
+    {
+      "title": "JavaScript bug fix",
+      "description": "Fix JavaScript errors",
+      "assignee": "Petar Petrovic",
+      "assigneeId": 1,
+      "dueDate": "13/3/2023",
+      "compleated": false,
+      "taskId": 1
+    },
+    {
+      "title": "CSS style fix",
+      "description": "Fix CSS Styling",
+      "assignee": "Stefan Trajkovic",
+      "assigneeId": 5,
+      "dueDate": "13/3/2023",
+      "compleated": true,
+      "taskId": 2
+    },
+    {
+      "title": "JavaScript sortig bug fix",
+      "description": "Fix sorting bug",
+      "assignee": "Vladan Mladenov",
+      "assigneeId": 0,
+      "dueDate": "13/3/2023",
+      "compleated": true,
+      "taskId": 3
+    },
+    {
+      "title": "Change design",
+      "description": "Fix app design",
+      "assignee": "Marija Ilic",
+      "assigneeId": 2,
+      "dueDate": "13/3/2023",
+      "compleated": false,
+      "taskId": 4
+    },
+    {
+      "title": "CSS bug fix",
+      "description": "Fix text size",
+      "assignee": "Milena Stankovic",
+      "assigneeId": 4,
+      "dueDate": "13/3/2023",
+      "compleated": true,
+      "taskId": 5
+    }
+  ]
 }

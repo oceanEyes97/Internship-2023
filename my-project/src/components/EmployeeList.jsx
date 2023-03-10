@@ -5,6 +5,7 @@ const EmployeeList = () => {
     //this componet shows all Employee's
     const [Employees, setEmployees] = useState(null);
     const [FetchStatus, setFetchStatus] = useState(false);
+    const [EnableDelete, setEnableDelete] = useState(false);
     useEffect(()=>{
         fetch('http://localhost:8000/employees')
         .then(response=>{
@@ -13,6 +14,7 @@ const EmployeeList = () => {
         .then(data=>{
             setEmployees(data);
             setFetchStatus(true);
+            setEnableDelete(true);
             console.log(Employees);
         });
     },[])
@@ -22,7 +24,9 @@ const EmployeeList = () => {
             <div className="flex place-content-center m-2">
            {
             FetchStatus&& Employees.map((employee)=>(
-                <Employee name={employee.fullName} email={employee.email} birthday={employee.birthday} salary={employee.salary} key={employee.id}/> 
+                <Employee name={employee.fullName} email={employee.email} 
+                birthday={employee.birthday} salary={employee.salary} 
+                key={employee.id} employeeId={employee.id} enableDelete={EnableDelete}/> 
             ))
            }
             </div>

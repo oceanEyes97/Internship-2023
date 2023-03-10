@@ -23,7 +23,10 @@ const TaskList = () => {
             <div className="flex place-content-center m-2">
             {
                 FetchStatus&& Tasks.map((task)=>(
-                    <Task title={task.title} description={task.description} assignee={task.assigneeId} dueDate={task.dueDate} key={task.taskId} />
+                    <Task title={task.title} description={task.description} 
+                     assignee={task.assignee}   assigneeId={task.assigneeId} 
+                    dueDate={task.dueDate} key={task.taskId} 
+                    />
                 ))
             }
             </div>
