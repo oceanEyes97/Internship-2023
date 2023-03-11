@@ -29,7 +29,7 @@ const EmployeeList = () => {
                 <Employee name={employee.fullName} email={employee.email} 
                 birthday={employee.birthday} salary={employee.salary} 
                 key={index} employeeId={employee.id} enableDelete={EnableDelete}
-                enableUpdate={EnableUpdate}/> 
+                enableUpdate={EnableUpdate} disableInput={false}/> 
             ))
            }
             </div>
