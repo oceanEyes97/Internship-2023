@@ -55,55 +55,55 @@
       "title": "CSS bug fix",
       "description": "Fix CSS positioning",
       "assignee": "Veljko Simic",
-      "assigneeId": 3,
+      "assigneeId": "3",
       "dueDate": "13/3/2023",
       "compleated": true,
-      "taskId": 0
+      "id": 0
     },
     {
       "title": "JavaScript bug fix",
       "description": "Fix JavaScript errors",
       "assignee": "Petar Petrovic",
-      "assigneeId": 1,
+      "assigneeId": "1",
       "dueDate": "13/3/2023",
       "compleated": false,
-      "taskId": 1
+      "id": 1
     },
     {
       "title": "CSS style fix",
       "description": "Fix CSS Styling",
       "assignee": "Stefan Trajkovic",
-      "assigneeId": 5,
+      "assigneeId": "5",
       "dueDate": "13/3/2023",
       "compleated": true,
-      "taskId": 2
+      "id": 2
     },
     {
       "title": "JavaScript sortig bug fix",
       "description": "Fix sorting bug",
       "assignee": "Vladan Mladenov",
-      "assigneeId": 0,
+      "assigneeId": "0",
       "dueDate": "13/3/2023",
       "compleated": true,
-      "taskId": 3
+      "id": 3
     },
     {
       "title": "Change design",
       "description": "Fix app design",
       "assignee": "Marija Ilic",
-      "assigneeId": 2,
+      "assigneeId": "2",
       "dueDate": "13/3/2023",
       "compleated": false,
-      "taskId": 4
+      "id": 4
     },
     {
       "title": "CSS bug fix",
       "description": "Fix text size",
       "assignee": "Milena Stankovic",
-      "assigneeId": 4,
+      "assigneeId": "4",
       "dueDate": "13/3/2023",
       "compleated": true,
-      "taskId": 5
+      "id": 5
     }
   ]
 }
