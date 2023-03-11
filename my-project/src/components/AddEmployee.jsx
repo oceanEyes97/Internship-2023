@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import NavigationBar from "./NavigationBar";
 
 const AddEmployee = () => {
@@ -7,7 +8,7 @@ const AddEmployee = () => {
     const [email, setEmail] = useState("");
     const [birthday, setBirthday] = useState("");
     const [salary, setSalary] = useState("");
-
+    const navigate=useNavigate();
     const hanndleSubmit=(event)=>{
         event.preventDefault();
         const employee={fullName,email,birthday,salary};
@@ -17,7 +18,7 @@ const AddEmployee = () => {
             headers:{"Content-Type":"application/json"},
             body:JSON.stringify(employee)
         }).then(()=>{
-            console.log("New employee added!");
+            navigate("/employees");
         })
     }
     return ( 

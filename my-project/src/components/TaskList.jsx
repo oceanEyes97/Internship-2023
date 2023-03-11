@@ -19,7 +19,7 @@ const TaskList = () => {
         
         <div>
             <NavigationBar/>
-            <div className="flex place-content-center m-2">
+            <div className="container py-10 px-10 mx-0 min-w-full flex flex-row items-center content-around">
             {
                 FetchStatus&& Tasks.map((task,index)=>(
                         <Task title={task.title} description={task.description} 

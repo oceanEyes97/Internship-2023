@@ -14,6 +14,11 @@ const Task = ({title,description,assignee,assigneeId,compleated,dueDate,taskId})
     
     const hanndleDelete=(event)=>{
         event.preventDefault();
+        fetch(`http://localhost:8000/tasks/${TaskId}`,{
+            method:'DELETE'  
+        }).then(()=>{
+            navigte(0);
+        })
     }
     const hanndleUpdate=(event)=>{
         event.preventDefault();
@@ -27,8 +32,6 @@ const Task = ({title,description,assignee,assigneeId,compleated,dueDate,taskId})
             body:JSON.stringify(task)
         }).then(()=>{
             console.log("Updated task!");
-        })
-        .then(()=>{
             navigte(0);
         })
 

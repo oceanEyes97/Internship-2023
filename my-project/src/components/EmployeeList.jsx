@@ -6,6 +6,7 @@ const EmployeeList = () => {
     const [Employees, setEmployees] = useState(null);
     const [FetchStatus, setFetchStatus] = useState(false);
     const [EnableDelete, setEnableDelete] = useState(false);
+    const [EnableUpdate, setEnableUpdate] = useState(false);
     useEffect(()=>{
         fetch('http://localhost:8000/employees')
         .then(response=>{
@@ -15,18 +16,20 @@ const EmployeeList = () => {
             setEmployees(data);
             setFetchStatus(true);
             setEnableDelete(true);
+            setEnableUpdate(true);
             console.log(Employees);
         });
     },[])
     return (  
         <div>
             <NavigationBar/>
-            <div className="flex place-content-center m-2">
+            <div className="container py-10 px-10 mx-0 min-w-full flex flex-row items-center content-around">
            {
             FetchStatus&& Employees.map((employee,index)=>(
                 <Employee name={employee.fullName} email={employee.email} 
                 birthday={employee.birthday} salary={employee.salary} 
-                key={index} employeeId={employee.id} enableDelete={EnableDelete}/> 
+                key={index} employeeId={employee.id} enableDelete={EnableDelete}
+                enableUpdate={EnableUpdate}/> 
             ))
            }
             </div>
