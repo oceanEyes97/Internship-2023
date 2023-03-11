@@ -37,30 +37,30 @@ const Task = ({title,description,assignee,assigneeId,compleated,dueDate,taskId})
 
     }
     return ( 
-        <div className=" w-[300px] h-auto border-2 rounded-xl p-2 m-2 border-black">
+        <div className=" w-52 h-auto border-2 rounded-xl p-2 m-2 border-black">
         <img className="w-16 h-16 mb-2 mt-2 mx-auto " src={TaskIcon} alt="TaskIcon" />
         <label>Title:</label>
-        <input className="bg-white"  type="text"
+        <input className="bg-white rounded-lg hover:bg-slate-200"  type="text"
         onChange={(event)=>setTitle(event.target.value)} value={Title}/>
         
         <label>Description:</label>
-        <input className="bg-white"  type="text"
+        <input className="bg-white rounded-lg hover:bg-slate-200"  type="text"
         onChange={(event)=>setDescription(event.target.value)} value={Description} />
         
         <label>Assignee:</label>
-        <input className="bg-white"  type="text"
+        <input className="bg-white rounded-lg hover:bg-slate-200"  type="text"
         onChange={(event)=>setAssignee(event.target.value)} value={Assignee}/> 
         <label>Deadline:</label>
-        <input className="bg-white"  type="text"
+        <input className="bg-white rounded-lg hover:bg-slate-200"  type="text"
         onChange={(event)=>setDate(event.target.value)} value={Date}/>
         <label>Compleated: </label>
-        <input className="bg-white" type="text"
+        <input className="bg-white rounded-lg hover:bg-slate-200" type="text"
         onChange={(event)=>setCompleated(event.target.value)} value={Compleated}/>
         
         <div className="justify-center">
-        <button className=" bg-green-500 text-xl text-white rounded-xl w-full mt-8 mb-4 justify-center"
+        <button className=" bg-green-500 hover:bg-green-400 text-xl text-white rounded-xl w-full mt-8 mb-4 justify-center"
          onClick={hanndleUpdate}>Update Task</button>
-        <button className="bg-red-500 text-xl text-white rounded-xl w-full mt-8 mb-4 justify-center"
+        <button className="bg-red-500 hover:bg-red-400 text-xl text-white rounded-xl w-full mt-8 mb-4 justify-center"
          onClick={hanndleDelete}>Delete Task</button>
         
         </div>
