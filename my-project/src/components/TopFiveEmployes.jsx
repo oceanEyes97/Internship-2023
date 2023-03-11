@@ -43,7 +43,7 @@ const TopFiveEmployees = () => {
                 birthday={employee.birthday} salary={employee.salary} 
                 numberOfCompleatedTasks={employee.numberOfCompleatedTasks}
                 key={index} employeeId={employee.id} enableDelete={false}
-                enableUpdate={false}/> 
+                enableUpdate={false} disableInput={true}/> 
             ))
            }
             </div>
