@@ -5,6 +5,7 @@
       "email": "vladan@gmail.com",
       "birthday": "06.12.1997.",
       "salary": "600 EUR",
+      "numberOfCompleatedTasks":"1",
       "id": 0
     },
     {
@@ -12,6 +13,7 @@
       "email": "petar@gmail.com",
       "birthday": "01.1.1997.",
       "salary": "500 EUR",
+      "numberOfCompleatedTasks":"1",
       "id": 1
     },
     {
@@ -19,6 +21,7 @@
       "email": "marija@gmail.com",
       "birthday": "3.2.1995",
       "salary": "800 EUR",
+      "numberOfCompleatedTasks":"1",
       "id": 2
     },
     {
@@ -26,6 +29,7 @@
       "email": "veljko@gmail.com",
       "birthday": "5.6.1998.",
       "salary": "400 EUR",
+      "numberOfCompleatedTasks":"1",
       "id": 3
     },
     {
@@ -33,6 +37,7 @@
       "email": "milena@gmail.com",
       "birthday": "9.12.1993.",
       "salary": "5000 EUR",
+      "numberOfCompleatedTasks":"1",
       "id": 4
     },
     {
@@ -40,6 +45,7 @@
       "email": "stefan@gmail.com",
       "birthday": "29.1.1997.",
       "salary": "600 EUR",
+      "numberOfCompleatedTasks":"1",
       "id": 5
     },
     {
@@ -47,6 +53,7 @@
       "email": "markom@gmail.com",
       "birthday": "1/1/1990",
       "salary": "400 EUR",
+      "numberOfCompleatedTasks":"1",
       "id": 6
     }
   ],

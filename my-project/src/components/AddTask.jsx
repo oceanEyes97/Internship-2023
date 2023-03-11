@@ -1,5 +1,6 @@
 import NavigationBar from "./NavigationBar";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 
 const AddTask = () => {
@@ -10,7 +11,7 @@ const AddTask = () => {
     const [AssigneeId, setAssigneId] = useState("");
     const [Date, setDate] = useState("");
     const [Compleated, setCompleated] = useState(false);
-
+    const navigate=useNavigate();
 
 
     const hanndleSubmit=(event)=>{
@@ -25,6 +26,7 @@ const AddTask = () => {
             body:JSON.stringify(task)
         }).then(()=>{
             console.log("New employee added!");
+            navigate("/tasks");
         })
     }
     return ( 

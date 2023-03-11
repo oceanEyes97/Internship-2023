@@ -1,18 +1,22 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import ProfileIcon from "../images/ProfileIcon.png"
-const Employee = ({name,email,birthday,salary,employeeId,enableDelete}) => {
+const Employee = ({name,email,birthday,salary,employeeId,numberOfCompleatedTasks,enableDelete,enableUpdate}) => {
 
     const [Name, setName] = useState(name);
     const [Email, setEmail] = useState(email);
     const [Date, setDate] = useState(birthday);
     const [Salary, setSalary] = useState(salary);
     const [EmployeeId, setEmployeeId] = useState(employeeId);
-    const [DeleteEnebaled, setDeleteEnebaled] = useState(enableDelete);
     const navigate=useNavigate();
 
     const hanndleDelete=(event)=>{
         event.preventDefault();
+        fetch(`http://localhost:8000/employees/${EmployeeId}`,{
+            method:'DELETE'  
+        }).then(()=>{
+            navigate(0);
+        })
     }
     const hanndleUpdate=(event)=>
     {
@@ -50,10 +54,10 @@ const Employee = ({name,email,birthday,salary,employeeId,enableDelete}) => {
         onChange={(event)=>setSalary(event.target.value)} value={Salary}/>
         <input type="text" disabled value={"ID: "+employeeId} />
     <div className="justify-center">
-    <button className=" bg-green-500 text-white rounded-xl w-full mt-8 mb-4 justify-center"
-         onClick={hanndleUpdate}>Update Employee</button>
+    {enableUpdate&&<button className=" bg-green-500 text-white rounded-xl w-full mt-8 mb-4 justify-center"
+         onClick={hanndleUpdate}>Update Employee</button>}
     {
-        DeleteEnebaled&&
+        enableDelete&&
         <button className="bg-red-500 text-white rounded-xl w-full mt-4 mb-4 justify-center"
          onClick={hanndleDelete}>Delete Employee</button>
         
