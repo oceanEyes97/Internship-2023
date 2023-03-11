@@ -23,7 +23,7 @@ const AddEmployee = () => {
     return ( 
     <div>
         <NavigationBar/>
-        <div className="mx-auto border border-slate-800 rounded-lg w-[400px] h-[450px] m-6 p-2">
+        <div className="mx-auto border border-slate-800 rounded-xl w-[400px] h-[450px] m-6 p-2">
         <form className=" grid m-4" onSubmit={hanndleSubmit}>
                 <h2 className="text-2xl text-center ">Add Employee</h2>
                 <label className="mb-2" htmlFor="Full Name">Full Name:</label>

@@ -23,10 +23,10 @@ const EmployeeList = () => {
             <NavigationBar/>
             <div className="flex place-content-center m-2">
            {
-            FetchStatus&& Employees.map((employee)=>(
+            FetchStatus&& Employees.map((employee,index)=>(
                 <Employee name={employee.fullName} email={employee.email} 
                 birthday={employee.birthday} salary={employee.salary} 
-                key={employee.id} employeeId={employee.id} enableDelete={EnableDelete}/> 
+                key={index} employeeId={employee.id} enableDelete={EnableDelete}/> 
             ))
            }
             </div>

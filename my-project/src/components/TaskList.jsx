@@ -13,7 +13,6 @@ const TaskList = () => {
         .then(data=>{
             setTasks(data);
             setFetchStatus(true);
-            console.log(Tasks);
         });
     },[])
     return ( 
@@ -22,10 +21,11 @@ const TaskList = () => {
             <NavigationBar/>
             <div className="flex place-content-center m-2">
             {
-                FetchStatus&& Tasks.map((task)=>(
-                    <Task title={task.title} description={task.description} 
+                FetchStatus&& Tasks.map((task,index)=>(
+                        <Task title={task.title} description={task.description} 
                      assignee={task.assignee}   assigneeId={task.assigneeId} 
-                    dueDate={task.dueDate} key={task.taskId} 
+                    compleated={task.compleated} dueDate={task.dueDate} taskId={task.id} 
+                    key={index}
                     />
                 ))
             }
