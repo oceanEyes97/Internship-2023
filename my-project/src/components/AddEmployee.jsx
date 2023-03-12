@@ -12,13 +12,13 @@ const AddEmployee = () => {
     const hanndleSubmit=(event)=>{
         event.preventDefault();
         const employee={fullName,email,birthday,salary};
-
+        //putting all the state into one to turn it into JSON and save it on the server,POST method will automaticly generate the id for the employee
         fetch('http://localhost:8000/employees',{
             method:'POST',
             headers:{"Content-Type":"application/json"},
             body:JSON.stringify(employee)
         }).then(()=>{
-            navigate("/employees");
+            navigate("/employees");//after adding the employee, navigateing the user to the employee list
         })
     }
     return ( 

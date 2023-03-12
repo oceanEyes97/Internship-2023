@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import ProfileIcon from "../images/ProfileIcon.png"
-const Employee = ({name,email,birthday,salary,employeeId,numberOfCompleatedTasks,enableDelete,enableUpdate,disableInput}) => {
+const Employee = ({name,email,birthday,salary,employeeId,enableDelete,enableUpdate,disableInput}) => {
 
     const [Name, setName] = useState(name);
     const [Email, setEmail] = useState(email);
@@ -34,7 +34,6 @@ const Employee = ({name,email,birthday,salary,employeeId,numberOfCompleatedTasks
         })
 
     }
-
     return ( 
     <div className=" w-52 h-auto border-2 rounded-xl p-2 m-2 border-black">
     <img className="w-16 h-16 mx-auto " src={ProfileIcon} alt="ProfileIcon" />
