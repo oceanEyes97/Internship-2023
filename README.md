@@ -35,6 +35,7 @@ Since this project is done with TailwindCSS,at the top of the index.css file is 
 
 
 #Project start up
+
 To start the application first open a terminal (CTRL+SHIFT+`) 
 (make sure that the last path in the terminal says /my-project)
 and run the compand npx json-server --watch data/data.json --port 8000
