@@ -5,13 +5,14 @@ const TaskList = () => {
     //this component list all tasks
     const [Tasks, setTasks] = useState();
     const [FetchStatus, setFetchStatus] = useState(false);
+    //fetching the data from JSON server
     useEffect(()=>{
         fetch('http://localhost:8000/tasks')
         .then(response=>{
             return response.json();
         })
         .then(data=>{
-            setTasks(data);
+            setTasks(data);// setting the response into state
             setFetchStatus(true);
         });
     },[])
@@ -19,7 +20,7 @@ const TaskList = () => {
         
         <div>
             <NavigationBar/>
-            <div className="container py-10 px-10 mx-0 min-w-full flex flex-row items-center content-around">
+            <div className="container py-10 px-10 mx-0 min-w-full flex flex-row items-center flex-wrap">
             {
                 FetchStatus&& Tasks.map((task,index)=>(
                         <Task title={task.title} description={task.description} 

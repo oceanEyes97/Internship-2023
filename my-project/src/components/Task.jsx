@@ -17,7 +17,7 @@ const Task = ({title,description,assignee,assigneeId,compleated,dueDate,taskId})
         fetch(`http://localhost:8000/tasks/${TaskId}`,{
             method:'DELETE'  
         }).then(()=>{
-            navigte(0);
+            navigte(0);//using useNavigate to refresh the page after delete
         })
     }
     const hanndleUpdate=(event)=>{
@@ -25,14 +25,15 @@ const Task = ({title,description,assignee,assigneeId,compleated,dueDate,taskId})
         
         const task={title:Title,description:Description,assignee:Assignee
             ,assigneeId:AssigneeId,dueDate:Date ,compleated:Compleated}
-            console.log(task);
+            //putting all the state into one to turn it into JSON and update it on the server
+        
+            
         fetch(`http://localhost:8000/tasks/${TaskId}`,{
             method:'PUT',
             headers:{"Content-Type":"application/json"},
             body:JSON.stringify(task)
         }).then(()=>{
-            console.log("Updated task!");
-            navigte(0);
+            navigte(0);//using useNavigate to refresh the page after update
         })
 
     }
@@ -50,8 +51,11 @@ const Task = ({title,description,assignee,assigneeId,compleated,dueDate,taskId})
         <label>Assignee:</label>
         <input className="bg-white rounded-lg hover:bg-slate-200"  type="text"
         onChange={(event)=>setAssignee(event.target.value)} value={Assignee}/> 
-        <label>Deadline:</label>
+        <label>AssigneeId:</label>
         <input className="bg-white rounded-lg hover:bg-slate-200"  type="text"
+        onChange={(event)=>setAssigneId(event.target.value)} value={AssigneeId}/> 
+        <label>Deadline:</label>
+        <input className="bg-white rounded-lg hover:bg-slate-200"  type="date"
         onChange={(event)=>setDate(event.target.value)} value={Date}/>
         <label>Compleated: </label>
         <input className="bg-white rounded-lg hover:bg-slate-200" type="text"
