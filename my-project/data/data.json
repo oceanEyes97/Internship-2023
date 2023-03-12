@@ -3,49 +3,49 @@
     {
       "fullName": "Vladan Mladenov",
       "email": "vladan@gmail.com",
-      "birthday": "06.12.1997.",
+      "birthday": "1997-12-06",
       "salary": "600 EUR",
       "id": 0
     },
     {
       "fullName": "Petar Petrovic",
       "email": "petar@gmail.com",
-      "birthday": "01.1.1997.",
+      "birthday": "1996-02-12",
       "salary": "500 EUR",
       "id": 1
     },
     {
       "fullName": "Marija Ilic",
       "email": "marija@gmail.com",
-      "birthday": "3.2.1995",
+      "birthday": "1999-05-24",
       "salary": "800 EUR",
       "id": 2
     },
     {
       "fullName": "Veljko Simic",
       "email": "veljko@gmail.com",
-      "birthday": "5.6.1998.",
+      "birthday": "1990-11-13",
       "salary": "400 EUR",
       "id": 3
     },
     {
       "fullName": "Milena Stankovic",
       "email": "milena@gmail.com",
-      "birthday": "9.12.1993.",
+      "birthday": "1995-08-23",
       "salary": "5000 EUR",
       "id": 4
     },
     {
       "fullName": "Stefan Trajkovic",
       "email": "stefan@gmail.com",
-      "birthday": "29.1.1997.",
+      "birthday": "1997-01-29",
       "salary": "600 EUR",
       "id": 5
     },
     {
       "fullName": "Marko Markovic",
       "email": "markom@gmail.com",
-      "birthday": "1/1/1990",
+      "birthday": "1992-03-13",
       "salary": "400 EUR",
       "id": 6
     }

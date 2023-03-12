@@ -46,7 +46,7 @@ const Employee = ({name,email,birthday,salary,employeeId,enableDelete,enableUpda
         onChange={(event)=>setEmail(event.target.value)} value={Email} disabled={disableInput}/>
         
         <label>Birthday:</label>
-        <input className="bg-white rounded-lg hover:bg-slate-200"  type="text"
+        <input className="bg-white rounded-lg w-full hover:bg-slate-200"  type="date"
         onChange={(event)=>setDate(event.target.value)} value={Date} disabled={disableInput}/> 
         <label>Salary:</label>
         <input className="bg-white rounded-lg hover:bg-slate-200"  type="text"
