@@ -12,5 +12,8 @@ and all the dependacies that are in package.json.
 If not simply enter cd my-project in the terminal.
 
 #Project structure
+
+
+
 ![image](https://user-images.githubusercontent.com/127392785/224553715-7c45afcb-ca00-40fe-be30-85c846f557b6.png)
 
