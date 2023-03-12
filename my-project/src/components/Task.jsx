@@ -20,6 +20,8 @@ const Task = ({title,description,assignee,assigneeId,compleated,dueDate,taskId})
             navigte(0);//using useNavigate to refresh the page after delete
         })
     }
+    //Note:To update the task click on the input field to eddit your new value
+    //when you edited all the values you wanted for that task,click on Update Task to fire the function to update the task
     const hanndleUpdate=(event)=>{
         event.preventDefault();
         

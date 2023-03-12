@@ -18,6 +18,8 @@ const Employee = ({name,email,birthday,salary,employeeId,enableDelete,enableUpda
             navigate(0);
         })
     }
+    //Note:To update the employee click on the input field to eddit your new value
+    //when you edited all the values you wanted for that employee,click on Update Employee to fire the function to update the employee
     const hanndleUpdate=(event)=>
     {
         event.preventDefault();
