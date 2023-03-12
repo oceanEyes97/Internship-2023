@@ -38,7 +38,7 @@ Since this project is done with TailwindCSS,at the top of the index.css file is 
 
 To start the application first open a terminal (CTRL+SHIFT+`) 
 (make sure that the last path in the terminal says /my-project)
-and run the compand npx json-server --watch data/data.json --port 8000
+and run the command npx json-server --watch data/data.json --port 8000
 to start the JSON server on port 8000.
 Open a new terminal,make sure that the last path in the terminal says /my-project
 an then run the comand npm run start, to start the application.
